@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>证书扫码结果</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            /* 调整后的渐变方案 */
+            background: linear-gradient(to bottom, 
+                #1a5099 0%, 
+                #1a5099 40%, 
+                #ffffff 60%
+            );
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            color: white;
+            text-align: center;
+            padding: 80px 0 40px;
+            width: 100%;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cert-image {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-20px);
+        }
+
+        .remark {
+            margin-top: auto;
+            padding: 40px 20px;
+            color: #333;
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: linear-gradient(to bottom, 
+                    #1a5099 0%, 
+                    #1a5099 30%, 
+                    #ffffff 50%
+                );
+            }
+            
+            .header {
+                padding: 50px 0 30px;
+                font-size: 20px;
+            }
+            
+            .cert-image {
+                width: 95%;
+                border-width: 1px;
+            }
+            
+            .remark {
+                font-size: 14px;
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">证书扫码结果</div>
+        <img src="董.bmp" alt="证书图片" class="cert-image">
+        <div class="remark">
+            备注：本证书应于2026年3月27日前复查
+        </div>
+    </div>
+</body>
+</html>
